@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESIGN</title>
+    
+    <link rel="stylesheet" href="nextstyle.css">
+
+<style>
+  
+    .design {
+        border-bottom: 2px solid orangered;
+    }
+
+    a {
+        border-bottom: 2px solid transparent;
+    }
+
+    ul:hover .design {
+        border-bottom: 2px solid transparent;
+    }
+
+    ul li a:hover {
+        color: white;
+        border-bottom: 2px solid orangered;
+        transition: linear;
+    }
+    .dsn {
+        margin-top: 160px;
+        border-left: 1px solid orangered;
+        padding: 18px;
+
+        margin-right: 300px;
+        font-family: sans-serif;
+    }
+  
+    h3{
+        color: orangered;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    b{
+        color: white;
+        font-size: 13px;
+    }
+    a{
+        
+        color: white;
+    }
+    .srch:hover {
+    background: transparent;
+    border: 1px solid orangered;
+   
+
+
+}
+
+@media screen and (max-width:600px) {
+    .menu{
+        width: 100%;
+    }
+    
+}
+   
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h1 class="logo">Hupp tech</h1>
+            </div>
+            <button id="button" onclick="toggle()">
+                <img  src="/ResumeProjects/Images/menuindex.png" style="height: 22px; ">
+                         
+                     </button>
+            <div class="menu">
+                <ul class="nav" id="nav">
+                    <li> <a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT </a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li class="design"><a href="design.html">DESIGN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="search" list="option" class="ph" placeholder="Type To Text..."><button class="srch">
+                    Search
+                </button>
+                <datalist id="option">
+                    <option value="w">web development</option>
+                    <option value="s">software development</option>
+                    <option value="f">freelancing</option>
+                    <option value="f">front-end development</option>
+                    <option value="p">back-end development</option>
+                    <option value="b"> photoshop</option>
+                </datalist>
+            </div>
+            <div class="dsn">
+             <h3>Go-to our other creative web pages:</h3><br>
+             <a href="/practice/hospitalwebsite.html">Hospital Website</a><br>
+             <a href="/practice/design.html">Design List</a><br>
+             <a href="/practice/loginform.html"> Log-in Form</a><br>
+
+            </div>
+            </div>
+        
+        </div>
+</body>
+
+<script>
+    
+    const nav = document.getElementById("nav");
+    function toggle(){
+        nav.classList.toggle("toggleNav");
+    }
+</script>
+
+</html>

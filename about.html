@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutus</title>
+    
+    
+    <link rel="stylesheet" href="nextstyle.css">
+    <style>
+
+.aboutus {
+    border-bottom: 2px solid orangered;
+}
+
+a {
+    border-bottom: 2px solid transparent;
+}
+
+ul:hover .aboutus {
+    border-bottom: 2px solid transparent;
+}
+
+ul li a:hover {
+    color: white;
+    border-bottom: 2px solid orangered;
+    transition: linear;
+}
+.aus{
+    
+    border-left: 1px solid orangered !important;
+
+    padding: 20px;
+    font-family: sans-serif;
+    /* display: flex; */
+}
+
+
+.container{
+    margin-top: 100px;
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+    /* outline: 2px solid green; */
+}
+.about{
+    color: orangered;
+}
+.para{
+    color: white;
+}
+.webdevg img{
+    width: 50vw;
+    
+}
+
+@media screen and (max-width:600px){
+    .webdevg img{
+        width: 100%;
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+}
+
+</style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h1 class="logo">Hupp tech</h1>
+            </div>
+            <button id="button" onclick="toggle()">
+                <img  src="/ResumeProjects/Images/menuindex.png" style="height: 22px; ">
+                         
+                     </button>
+            <div class="menu">
+                <ul class="nav" id="nav">
+                    <li > <a href="index.html">HOME</a></li>
+                    <li class="aboutus"><a href="about.html">ABOUT </a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        
+            <div class="search" >
+                <input type="search"   list="option" class="ph" placeholder="Type To Text..."><button class="srch">
+                    Search
+                </button>
+                <datalist id="option">
+                    <option value="w">web development</option>
+                    <option value="s">software development</option>
+                    <option value="f">freelancing</option>
+                    <option value="f">front-end development</option>
+                    <option value="p">back-end development</option>
+                    <option value="b"> photoshop</option>
+                </datalist>
+                </div>
+                </div>
+                
+                <div class="container"  >
+                    <div class="aus">
+
+                        <h2 class="about">About us</h2>
+                        <p class="para">hupp tech is a fast-growing software company that  keeps culture  and creativity at the heart of everything <br> we do our mission is  to help customers unlock their <br> creativity and build exceptional content using our <br> uniquely powerfull design platform and our tirelessly <br> helpfull support and education resources.</p>
+                    </div>
+                        <div class="webdevg">
+                            <img src="images/webDevGraphics.png" alt="">
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+            
+        
+</body>
+
+<script>
+    
+    const nav = document.getElementById("nav");
+    const button = document.getElementById("button");
+    function toggle(){
+        nav.classList.toggle("toggleNav");
+        button.classList.toggle("rotate");
+    }
+</script>
+</html>
